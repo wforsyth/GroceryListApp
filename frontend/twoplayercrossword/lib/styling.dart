@@ -19,7 +19,7 @@ InputDecoration whiteInputDecoration(String label) {
       borderRadius: BorderRadius.circular(12),
       borderSide: const BorderSide(color: Colors.black54, width: 2),
     ),
-    contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+    contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
   );
 }
 
@@ -64,9 +64,19 @@ final TextTheme appTextTheme = TextTheme(
 final ButtonStyle appButtonStyle = ElevatedButton.styleFrom(
   backgroundColor: kBackgroundColor, // Your kPrimaryColor
   foregroundColor: kBackgroundColor, // Text/icon color
-  padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
+  padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 20),
   shape: RoundedRectangleBorder(
-    borderRadius: BorderRadius.circular(12),
+    borderRadius: BorderRadius.circular(8),
   ),
   elevation: 2,
+);
+
+final BottomNavigationBarThemeData appBottomNavigationBarTheme = BottomNavigationBarThemeData(
+  backgroundColor: kPrimaryColor,
+  selectedItemColor: kBackgroundColor,
+  unselectedItemColor: kBackgroundColor.withOpacity(0.7),
+  selectedLabelStyle: appTextTheme.bodyLarge,
+  unselectedLabelStyle: appTextTheme.bodyLarge,
+  type: BottomNavigationBarType.fixed, // ensures labels always show
+  elevation: 8,
 );

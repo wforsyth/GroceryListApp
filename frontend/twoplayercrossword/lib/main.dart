@@ -38,8 +38,9 @@ class MyApp extends StatelessWidget {
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: appButtonStyle,
         ),
+        bottomNavigationBarTheme: appBottomNavigationBarTheme,
       ),
-      initialRoute: AppRoutes.login,
+      initialRoute: AppRoutes.prelogin,
       routes: AppRoutes.routes,
     );
   }

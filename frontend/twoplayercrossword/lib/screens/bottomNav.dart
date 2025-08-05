@@ -55,9 +55,6 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Epialarm'),
-      ),
       //Collapsable side drawer to display users name and log out functionality
       drawer: Drawer(
           child: ListView(padding: EdgeInsets.zero, children: <Widget>[
@@ -73,7 +70,7 @@ class _HomeScreenState extends State<HomeScreen> {
           onTap: () {
             widget.signOut();
             Navigator.of(context).pop();
-            Navigator.pushNamed(context, AppRoutes.login);
+            Navigator.pushNamed(context, AppRoutes.prelogin);
           },
         ),
       ])),
