@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "927063133007",
+    "project_id": "shoppinglist-a22c1",
+    "storage_bucket": "shoppinglist-a22c1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927063133007:android:e88ce0f586a38c43e9533a",
+        "android_client_info": {
+          "package_name": "com.example.twoplayercrossword"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNaz_KMfnOTkdneaXCyu1kG9vOAU5qyaY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
